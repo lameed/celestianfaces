@@ -22,4 +22,4 @@ def secure_token
 	end
 end
 
-Celestianfaces::Application.config.secret_key_base = '06014cf1e5f700dbe1e8f5ef9bb8974281a729c9f378d837302c434b791d4eddac39398716991226981a2bb9c7c377ad5c345c0fb8bf81da77c5ba89aff4cd60'
+Celestianfaces::Application.config.secret_key_base = 'secure_token'
