@@ -6,6 +6,7 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'simple_form'
 gem 'rails-simple-search'
 
+
 # Use sqlite3 as the database for Active Record
 group :development, :test  do
 	gem 'sqlite3', '1.3.8'
@@ -48,7 +49,7 @@ group :production do
 	
 end
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+ gem 'bcrypt-ruby', '3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
