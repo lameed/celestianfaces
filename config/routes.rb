@@ -1,13 +1,13 @@
 Celestianfaces::Application.routes.draw do
-
+  root 'pages#home'
   get "users/new"
   resources :users
-  match '/signup',  to: 'users#new', via: 'get'
+  
   
   match '/help',    to: 'pages#help',    via: 'get'
   match '/about',   to: 'pages#about',   via: 'get'
   match '/contact', to: 'pages#contact', via: 'get'
-  root 'pages#home'
+  
 
   resources :sessions, only: [:new, :create, :destroy]
   match '/signup',  to: 'users#new',            via: 'get'
