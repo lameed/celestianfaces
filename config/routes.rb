@@ -2,7 +2,7 @@ Celestianfaces::Application.routes.draw do
   root 'pages#home'
   get "users/new"
   resources :users
-  
+  resources :microposts, only: [:create, :destroy]
   
   match '/help',    to: 'pages#help',    via: 'get'
   match '/about',   to: 'pages#about',   via: 'get'
